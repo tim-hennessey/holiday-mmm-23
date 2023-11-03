@@ -1,0 +1,86 @@
+body {
+    background: #fafafa;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #555;
+}
+
+.default {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.txt {
+    position: absolute;
+    opacity:0;
+    // left: -$banner-width;
+    
+}
+
+.img {
+    position: absolute;
+    // left:$banner-width;
+}
+
+.cta {
+    position: absolute;
+    // opacity:0;
+}
+
+.logo {
+    position: absolute;
+}
+
+.container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: $banner-width;
+    height: $banner-height;
+}
+
+.dot{
+    width:8px;
+    height:8px;
+    border-radius: 50%;
+    background: #fff;
+    position:absolute;
+}
+
+#border {
+    display: block;
+    width: $banner-width;
+    height: $banner-height;
+    pointer-events: none;
+    outline: solid 1px #ccc;
+    outline-offset: -1px;
+    z-index: 999;
+}
+
+#banner {
+    background: #c0d1df;
+    overflow: hidden;
+    width: $banner-width;
+    height: $banner-height;
+    opacity: 0;
+
+    #button-exit {
+        background-color: rgba(255, 255, 255, 0);
+        cursor: pointer;
+        height: 100%;
+        width: 100%;
+    }
+
+    #mask {
+        clip: rect(0px,728px,90px,135px);
+        height: 100%;
+        width: 100%;
+        overflow:hidden;
+    }
+
+    #logo {
+        top:12px;
+        left:32px;
+    }
+   
+}

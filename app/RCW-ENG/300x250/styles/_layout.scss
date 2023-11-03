@@ -1,0 +1,74 @@
+body {
+    background: #fafafa;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #555;
+}
+
+.default {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.txt {
+    position: absolute;
+    opacity:0;
+    
+}
+
+.img {
+    position: absolute;
+    right:0;
+}
+
+.cta {
+    position: absolute;
+    // opacity:0;
+}
+
+.container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: $banner-width;
+    height: $banner-height;
+}
+
+.dot{
+    width:8px;
+    height:8px;
+    border-radius: 50%;
+    background: #fff;
+    position:absolute;
+}
+
+#border {
+    display: block;
+    width: $banner-width;
+    height: $banner-height;
+    pointer-events: none;
+    outline: solid 1px #ccc;
+    outline-offset: -1px;
+    z-index: 999;
+}
+
+#banner {
+	background: #fff;
+    overflow: hidden;
+    width: $banner-width;
+    height: $banner-height;
+    opacity: 0;
+
+    #button-exit {
+        background-color: rgba(255, 255, 255, 0);
+        cursor: pointer;
+        height: 100%;
+        width: 100%;
+    }
+
+    #logo {
+        top:176px;
+        left:15px;
+    }
+   
+}
